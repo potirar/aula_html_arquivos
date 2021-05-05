@@ -5,15 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Seletores parte 2</title>
     <style>
-        body{font-family: helvetica; background-color: khaki;}
+        body{font-family: helvetica; background-color:cornsilk;}
         h1{text-align: center;}
 
-        .bloco1{background-color: lightcoral; border: 5px double black}
+        .bloco1{background-color: lightcoral; border: 2px solid black; margin-bottom: 10px; width: 300px; box-sizing: border-box;}
         /*encadeamento de seletores*/
-        .bloco1 p{color:white;}
+        .bloco1 p{color:black;}
         /*acessando os filhos direto do bloco 1*/
-        .bloco1 > p{text-decoration: underline double; text-align: right;}
-        
+        .bloco1 > p{text-decoration: underline; text-align: right;}
+
+        .bloco2 > p{text-decoration: underline;text-align: right; color: black;}
+        .bloco2{background-color: cornflowerblue;border: 2px solid black; margin-top: 20px; width: 300px; box-sizing: border-box; padding: 50px;}
+        /*Utilizando seletor adjacente para a tag de parágrafo examente após ao bloco dois*/
+        .bloco2 + p{border: 2px solid darkviolet; text-transform: uppercase; margin-left: 10px; padding-left: 10px;} /* uppercase serve para deixar o texto em maiúsculo*/
+
     </style>
 </head>
 <body>
